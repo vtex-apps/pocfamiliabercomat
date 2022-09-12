@@ -1,6 +1,9 @@
 {
   "store.home": {
     "blocks": [
+      "conditionalFrontBlock#id1",
+      "conditionalFrontBlock#id2",
+      "conditionalFrontBlock#id3",
       "list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
@@ -13,6 +16,48 @@
       "rich-text#link",
       "newsletter"
     ]
+  },
+  
+  "conditionalFrontBlock#id1": {
+    "props": {
+      "frontValue": 1
+    },
+    "children": ["rich-text#shelf-title1"]
+  },
+
+  "conditionalFrontBlock#id2": {
+    "props": {
+      "frontValue": 2
+    },
+    "children": ["rich-text#shelf-title2"]
+  },
+
+  "conditionalFrontBlock#id3": {
+    "props": {
+      "frontValue": 3
+    },
+    "children": ["rich-text#shelf-title3"]
+  },
+
+  "rich-text#shelf-title1": {
+    "props": {
+      "text": "## Estoy en el 1",
+      "blockClass": "shelfTitle"
+    }
+  },
+
+  "rich-text#shelf-title2": {
+    "props": {
+      "text": "## Estoy en el 2",
+      "blockClass": "shelfTitle"
+    }
+  },
+
+  "rich-text#shelf-title3": {
+    "props": {
+      "text": "## Estoy en el 3",
+      "blockClass": "shelfTitle"
+    }
   },
 
   "list-context.image-list#demo": {
@@ -47,10 +92,12 @@
 
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Summer",
+      "text": "## Materiales",
       "blockClass": "shelfTitle"
     }
   },
+
+  
   "flex-layout.row#shelf": {
     "children": ["list-context.product-list#demo1"]
   },
