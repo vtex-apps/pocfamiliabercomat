@@ -4,12 +4,11 @@
       "conditionalFrontBlock#id1",
       "conditionalFrontBlock#id2",
       "conditionalFrontBlock#id3",
-      "list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "flex-layout.row#deals",
-      "__fold__",
-      "rich-text#shelf-title",
+      // "flex-layout.row#deals",
+      // "__fold__",
+      // "rich-text#shelf-title",
       "flex-layout.row#shelf",
       "info-card#home",
       "rich-text#question",
@@ -22,61 +21,125 @@
     "props": {
       "frontValue": 1
     },
-    "children": ["rich-text#shelf-title1"]
+    "children": [
+      "list-context.image-list#banner-1",
+      "rich-text#shelf-title1"
+    ]
   },
 
   "conditionalFrontBlock#id2": {
     "props": {
       "frontValue": 2
     },
-    "children": ["rich-text#shelf-title2"]
+    "children": [
+      "list-context.image-list#banner-2",
+      "rich-text#shelf-title2"
+    ]
   },
 
   "conditionalFrontBlock#id3": {
     "props": {
       "frontValue": 3
     },
-    "children": ["rich-text#shelf-title3"]
+    "children": [
+      "list-context.image-list#banner-3",
+      "rich-text#shelf-title3"
+    ]
   },
 
   "rich-text#shelf-title1": {
     "props": {
-      "text": "## Estoy en el 1",
+      "text": "## Productos Destacados 1",
       "blockClass": "shelfTitle"
-    }
+    },
+    "title": "FC01 - Richtext"
   },
 
   "rich-text#shelf-title2": {
     "props": {
-      "text": "## Estoy en el 2",
+      "text": "## Productos Destacados 2",
       "blockClass": "shelfTitle"
-    }
+    },
+    "title": "FC02 - Richtext"
   },
 
   "rich-text#shelf-title3": {
     "props": {
-      "text": "## Estoy en el 3",
+      "text": "## Productos Destacados 3",
       "blockClass": "shelfTitle"
-    }
+    },
+    "title": "FC03 - Richtext"
   },
 
-  "list-context.image-list#demo": {
+  "list-context.image-list#banner-1": {
     "children": ["slider-layout#demo-images"],
     "props": {
       "height": 570,
       "preload": true,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+          "image": "https://familiabercomat.vtexassets.com/assets/vtex.file-manager-graphql/images/b89c2a70-6ccd-4167-8351-1aa73b6badea___3013b50e15dfd005d0c12cd91e7fae86.png",
+          "mobileImage": "https://familiabercomat.vtexassets.com/assets/vtex.file-manager-graphql/images/b89c2a70-6ccd-4167-8351-1aa73b6badea___3013b50e15dfd005d0c12cd91e7fae86.png"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
+          "image": "https://familiabercomat.vtexassets.com/assets/vtex.file-manager-graphql/images/bafe160d-7863-4055-ab13-a36c2f411d76___43ce53bb97af20a682b6c4e9bc65c55f.png",
+          "mobileImage": "https://familiabercomat.vtexassets.com/assets/vtex.file-manager-graphql/images/bafe160d-7863-4055-ab13-a36c2f411d76___43ce53bb97af20a682b6c4e9bc65c55f.png"
+        },
+        {
+          "image": "https://familiabercomat.vtexassets.com/assets/vtex.file-manager-graphql/images/d436cfa1-486b-4d25-96ec-59568f281d38___a5b40e1874d9e28c34170b9eb6427936.png",
+          "mobileImage": "https://familiabercomat.vtexassets.com/assets/vtex.file-manager-graphql/images/d436cfa1-486b-4d25-96ec-59568f281d38___a5b40e1874d9e28c34170b9eb6427936.png"
         }
       ]
-    }
+    },
+    "title": "FC01 - Banner"
   },
+
+  "list-context.image-list#banner-2": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 570,
+      "preload": true,
+      "images": [
+        {
+          "image": "https://familiabercomat.vtexassets.com/assets/vtex.file-manager-graphql/images/309f5f8a-ce0c-45b7-b881-71b48ee185ee___47066b8f96cdacd94e44e5ff7fd0ea35.webp",
+          "mobileImage": "https://familiabercomat.vtexassets.com/assets/vtex.file-manager-graphql/images/309f5f8a-ce0c-45b7-b881-71b48ee185ee___47066b8f96cdacd94e44e5ff7fd0ea35.webp"
+        },
+        {
+          "image": "https://familiabercomat.vtexassets.com/assets/vtex.file-manager-graphql/images/4b318bf3-eac8-4b99-bf94-f14a2fcd9657___0152e1eaa7e39f38f6c267c72bbcbdc4.jpeg",
+          "mobileImage": "https://familiabercomat.vtexassets.com/assets/vtex.file-manager-graphql/images/4b318bf3-eac8-4b99-bf94-f14a2fcd9657___0152e1eaa7e39f38f6c267c72bbcbdc4.jpeg"
+        },
+        {
+          "image": "https://familiabercomat.vtexassets.com/assets/vtex.file-manager-graphql/images/fd7d163c-39cf-4609-9d2a-0cb59392fb2e___85402d41958cc04da2a2ef23e0254704.jpeg",
+          "mobileImage": "https://familiabercomat.vtexassets.com/assets/vtex.file-manager-graphql/images/fd7d163c-39cf-4609-9d2a-0cb59392fb2e___85402d41958cc04da2a2ef23e0254704.jpeg"
+        }
+      ]
+    },
+    "title": "FC02 - Banner"
+  },
+
+  "list-context.image-list#banner-3": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 570,
+      "preload": true,
+      "images": [
+        {
+          "image": "https://familiabercomat.vtexassets.com/assets/vtex.file-manager-graphql/images/37ee2d42-ff65-465d-9849-3883060bfb75___b9fead3a4a5c9a45e44ca42aff799cec.jpeg",
+          "mobileImage": "https://familiabercomat.vtexassets.com/assets/vtex.file-manager-graphql/images/37ee2d42-ff65-465d-9849-3883060bfb75___b9fead3a4a5c9a45e44ca42aff799cec.jpeg"
+        },
+        {
+          "image": "https://familiabercomat.vtexassets.com/assets/vtex.file-manager-graphql/images/f018cbdb-4bd8-4531-84ca-94b507ef7f17___b45a86290af619b1f0420d307d8eadeb.jpeg",
+          "mobileImage": "https://familiabercomat.vtexassets.com/assets/vtex.file-manager-graphql/images/f018cbdb-4bd8-4531-84ca-94b507ef7f17___b45a86290af619b1f0420d307d8eadeb.jpeg"
+        },
+        {
+          "image": "https://familiabercomat.vtexassets.com/assets/vtex.file-manager-graphql/images/81cf5409-9017-4fcc-b68e-68c2243a9a8a___ba8b8c31514198e347dbc2608c2318b2.jpeg",
+          "mobileImage": "https://familiabercomat.vtexassets.com/assets/vtex.file-manager-graphql/images/81cf5409-9017-4fcc-b68e-68c2243a9a8a___ba8b8c31514198e347dbc2608c2318b2.jpeg"
+        }
+      ]
+    },
+    "title": "FC03 - Banner"
+  },
+
   "slider-layout#demo-images": {
     "props": {
       "itemsPerPage": {
@@ -97,10 +160,10 @@
     }
   },
 
-  
   "flex-layout.row#shelf": {
     "children": ["list-context.product-list#demo1"]
   },
+
   "list-context.product-list#demo1": {
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products"],
@@ -108,6 +171,7 @@
       "orderBy": "OrderByTopSaleDESC"
     }
   },
+
   "slider-layout#demo-products": {
     "props": {
       "itemsPerPage": {
